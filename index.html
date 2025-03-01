@@ -18,11 +18,11 @@
                     <p>Simla Burcu Harma, Ayan Chakraborty, Elizaveta Kostenok, Danila Mishin, Dongho Ha, Babak Falsafi, Martin Jaggi, Ming Liu, Yunho Oh, Suvinay Subramanian, Amir Yazdanbakhsh</p>
                 </div>
                 <div class="buttons is-centered mt-4">
-                    <a href="paper_link.pdf" class="button is-dark is-rounded">
+                    <a href="https://openreview.net/forum?id=wJv4AIt4sK" class="button is-dark is-rounded">
                         <span class="icon"><i class="fas fa-file-pdf"></i></span>
                         <span>Paper</span>
                     </a>
-                    <a href="github_repo_link" class="button is-dark is-rounded">
+                    <a href="https://github.com/parsa-epfl/quantization-sparsity-interplay" class="button is-dark is-rounded">
                         <span class="icon"><i class="fab fa-github"></i></span>
                         <span>Code</span>
                     </a>
@@ -34,15 +34,7 @@
         <div class="container">
             <h2 class="title">Abstract</h2>
             <p>
-                The increasing size of deep neural networks (DNNs) necessitates effective model
-                compression to reduce their computational and memory footprints. Sparsity and
-                quantization are two prominent compression methods that have been shown to
-                reduce DNNs' computational and memory footprints significantly while preserving
-                model accuracy. However, how these two methods interact when combined together
-                remains a key question for developers, as many tacitly assume that they are orthogonal,
-                meaning that their combined use does not introduce additional errors beyond those
-                introduced by each method independently. In this paper, we provide the first mathematical
-                proof that sparsity and quantization are non-orthogonal...
+                The increasing size of deep neural networks (DNNs) necessitates effective model compression to reduce their computational and memory footprints. Sparsity and quantization are two prominent compression methods that have been shown to reduce DNNs' computational and memory footprints significantly while preserving model accuracy. However, how these two methods interact when combined together remains a key question for developers, as many tacitly assume that they are orthogonal, meaning that their combined use does not introduce additional errors beyond those introduced by each method independently. In this paper, we provide the first mathematical proof that sparsity and quantization are non-orthogonal. We corroborate these results with experiments spanning a range of large language models, including the OPT and LLaMA model families (with 125M to 8B parameters), and vision models like ViT and ResNet. We show that the order in which we apply these methods matters because applying quantization before sparsity may disrupt the relative importance of tensor elements, which may inadvertently remove significant elements from a tensor. More importantly, we show that even if applied in the correct order, the compounded errors from sparsity and quantization can significantly harm accuracy. Our findings extend to the efficient deployment of large models in resource-constrained compute platforms to reduce serving cost, offering insights into best practices for applying these compression methods to maximize hardware resource efficiency without compromising accuracy.
             </p>
         </div>
     </section>
